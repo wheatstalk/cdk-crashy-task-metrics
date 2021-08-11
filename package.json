@@ -1,8 +1,8 @@
 {
-  "name": "cdk-crashy-task-metrics",
+  "name": "@wheatstalk/cdk-crashy-task-metrics",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshkellendonk/cdk-crashy-task-metrics.git"
+    "url": "https://github.com/wheatstalk/cdk-crashy-task-metrics.git"
   },
   "scripts": {
     "clobber": "npx projen clobber",
@@ -14,8 +14,8 @@
     "test:update": "npx projen test:update",
     "bump": "npx projen bump",
     "unbump": "npx projen unbump",
-    "upgrade-dependencies": "npx projen upgrade-dependencies",
-    "upgrade-projen": "npx projen upgrade-projen",
+    "publish:github": "npx projen publish:github",
+    "upgrade": "npx projen upgrade",
     "default": "npx projen default",
     "watch": "npx projen watch",
     "package": "npx projen package",
@@ -25,7 +25,7 @@
     "docgen": "npx projen docgen",
     "release": "npx projen release",
     "projen": "npx projen",
-    "start": "npx projen start"
+    "it:dev": "cdk --app \"ts-node -P tsconfig.eslint.json src/it/it-dev.ts\""
   },
   "author": {
     "name": "Josh Kellendonk",
@@ -38,6 +38,7 @@
     "@types/node": "^10.17.0",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "aws-cdk": "^1.95.2",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.5",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -53,10 +54,21 @@
     "projen": "^0.27.27",
     "standard-version": "^9",
     "ts-jest": "^27.0.4",
+    "ts-node": "^9",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
+    "@aws-cdk/aws-cloudwatch": "^1.95.2",
+    "@aws-cdk/aws-events": "^1.95.2",
+    "@aws-cdk/aws-events-targets": "^1.95.2",
+    "@aws-cdk/core": "^1.95.2",
     "constructs": "^3.2.27"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudwatch": "^1.95.2",
+    "@aws-cdk/aws-events": "^1.95.2",
+    "@aws-cdk/aws-events-targets": "^1.95.2",
+    "@aws-cdk/core": "^1.95.2"
   },
   "bundledDependencies": [],
   "keywords": [
