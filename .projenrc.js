@@ -7,7 +7,7 @@ const project = new AwsCdkConstructLibrary({
   name: '@wheatstalk/cdk-crashy-task-metrics',
   repositoryUrl: 'https://github.com/wheatstalk/cdk-crashy-task-metrics.git',
 
-  releaseEveryCommit: false,
+  releaseEveryCommit: true,
   releaseToNpm: true,
 
   projenUpgradeSecret: 'YARN_UPGRADE_TOKEN',
