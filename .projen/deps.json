@@ -28,6 +28,11 @@
       "type": "build"
     },
     {
+      "name": "aws-sdk",
+      "version": "^2",
+      "type": "build"
+    },
+    {
       "name": "eslint",
       "type": "build"
     },
@@ -105,12 +110,32 @@
       "type": "peer"
     },
     {
+      "name": "@aws-cdk/aws-ecs",
+      "version": "^1.95.2",
+      "type": "peer"
+    },
+    {
       "name": "@aws-cdk/aws-events-targets",
       "version": "^1.95.2",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-events",
+      "version": "^1.95.2",
+      "type": "peer"
+    },
+    {
+      "name": "@aws-cdk/aws-iam",
+      "version": "^1.95.2",
+      "type": "peer"
+    },
+    {
+      "name": "@aws-cdk/aws-lambda",
+      "version": "^1.95.2",
+      "type": "peer"
+    },
+    {
+      "name": "@aws-cdk/aws-logs",
       "version": "^1.95.2",
       "type": "peer"
     },
@@ -130,12 +155,32 @@
       "type": "runtime"
     },
     {
+      "name": "@aws-cdk/aws-ecs",
+      "version": "^1.95.2",
+      "type": "runtime"
+    },
+    {
       "name": "@aws-cdk/aws-events-targets",
       "version": "^1.95.2",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-events",
+      "version": "^1.95.2",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-iam",
+      "version": "^1.95.2",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-lambda",
+      "version": "^1.95.2",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-logs",
       "version": "^1.95.2",
       "type": "runtime"
     },

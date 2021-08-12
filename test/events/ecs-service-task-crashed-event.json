@@ -1,0 +1,93 @@
+{
+  "version": "0",
+  "id": "3fe40877-c968-b7b7-2e04-a15a941137d0",
+  "detail-type": "ECS Task State Change",
+  "source": "aws.ecs",
+  "account": "111111111111111",
+  "time": "2021-08-11T22:46:13Z",
+  "region": "ca-central-1",
+  "resources": [
+    "arn:aws:ecs:ca-central-1:111111111111111:task/ItLit-ClusterEB0386A7-nWUaxKV2PwyD/7e97eb6bf5e74a3aa8f957b12284c3b5"
+  ],
+  "detail": {
+    "attachments": [
+      {
+        "id": "56978b5a-348b-4736-aafc-8bf2f18b83c1",
+        "type": "eni",
+        "status": "DELETED",
+        "details": [
+          {
+            "name": "subnetId",
+            "value": "subnet-00d2b5a65cee610d1"
+          },
+          {
+            "name": "networkInterfaceId",
+            "value": "eni-0807d2a93e52a30e4"
+          },
+          {
+            "name": "macAddress",
+            "value": "06:88:90:24:32:9a"
+          },
+          {
+            "name": "privateDnsName",
+            "value": "ip-10-0-238-9.ca-central-1.compute.internal"
+          },
+          {
+            "name": "privateIPv4Address",
+            "value": "10.0.238.9"
+          }
+        ]
+      }
+    ],
+    "availabilityZone": "ca-central-1b",
+    "clusterArn": "arn:aws:ecs:ca-central-1:111111111111111:cluster/ItLit-ClusterEB0386A7-nWUaxKV2PwyD",
+    "connectivity": "CONNECTED",
+    "connectivityAt": "2021-08-11T22:44:39.455Z",
+    "containers": [
+      {
+        "containerArn": "arn:aws:ecs:ca-central-1:111111111111111:container/ItLit-ClusterEB0386A7-nWUaxKV2PwyD/7e97eb6bf5e74a3aa8f957b12284c3b5/3c0fb674-c97a-42ea-a160-a6d5ed496bbd",
+        "lastStatus": "STOPPED",
+        "name": "crashy",
+        "image": "alpine:3",
+        "runtimeId": "7e97eb6bf5e74a3aa8f957b12284c3b5-146656371",
+        "taskArn": "arn:aws:ecs:ca-central-1:111111111111111:task/ItLit-ClusterEB0386A7-nWUaxKV2PwyD/7e97eb6bf5e74a3aa8f957b12284c3b5",
+        "networkInterfaces": [
+          {
+            "attachmentId": "56978b5a-348b-4736-aafc-8bf2f18b83c1",
+            "privateIpv4Address": "10.0.238.9"
+          }
+        ],
+        "cpu": "0"
+      }
+    ],
+    "cpu": "256",
+    "createdAt": "2021-08-11T22:44:34.054Z",
+    "desiredStatus": "STOPPED",
+    "enableExecuteCommand": false,
+    "ephemeralStorage": {
+      "sizeInGiB": 20
+    },
+    "executionStoppedAt": "2021-08-11T22:45:50.423Z",
+    "group": "service:ItLit-ServiceD69D759B-XPamf8hcC1FO",
+    "launchType": "FARGATE",
+    "lastStatus": "STOPPED",
+    "memory": "512",
+    "overrides": {
+      "containerOverrides": [
+        {
+          "name": "crashy"
+        }
+      ]
+    },
+    "platformVersion": "1.4.0",
+    "startedBy": "ecs-svc/3892796557396416938",
+    "stoppingAt": "2021-08-11T22:46:00.45Z",
+    "stoppedAt": "2021-08-11T22:46:13.251Z",
+    "stoppedReason": "CannotPullContainerError: inspect image has been retried 5 time(s): httpReaderSeeker: failed open: unexpected status code https://registry-1.docker.io/v2/library/alpine/manifests/sha256:eb3e4e175ba6d212ba1d6e04fc0782916c08e1c9d7b45892e9796141b1d379ae: ...",
+    "stopCode": "TaskFailedToStart",
+    "taskArn": "arn:aws:ecs:ca-central-1:111111111111111:task/ItLit-ClusterEB0386A7-nWUaxKV2PwyD/7e97eb6bf5e74a3aa8f957b12284c3b5",
+    "taskDefinitionArn": "arn:aws:ecs:ca-central-1:111111111111111:task-definition/ItLitTaskDefinitionA824A510:6",
+    "updatedAt": "2021-08-11T22:46:13.251Z",
+    "version": 4
+  }
+}

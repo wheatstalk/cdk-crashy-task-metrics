@@ -25,7 +25,7 @@
     "docgen": "npx projen docgen",
     "release": "npx projen release",
     "projen": "npx projen",
-    "it:dev": "cdk --app \"ts-node -P tsconfig.eslint.json src/it/it-dev.ts\""
+    "it:lit": "cdk --app \"ts-node -P tsconfig.eslint.json src/it/it-lit.ts\""
   },
   "author": {
     "name": "Josh Kellendonk",
@@ -39,6 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "aws-cdk": "^1.95.2",
+    "aws-sdk": "^2",
     "eslint": "^7.32.0",
     "eslint-import-resolver-node": "^0.3.5",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -59,15 +60,23 @@
   },
   "peerDependencies": {
     "@aws-cdk/aws-cloudwatch": "^1.95.2",
+    "@aws-cdk/aws-ecs": "^1.95.2",
     "@aws-cdk/aws-events": "^1.95.2",
     "@aws-cdk/aws-events-targets": "^1.95.2",
+    "@aws-cdk/aws-iam": "^1.95.2",
+    "@aws-cdk/aws-lambda": "^1.95.2",
+    "@aws-cdk/aws-logs": "^1.95.2",
     "@aws-cdk/core": "^1.95.2",
     "constructs": "^3.2.27"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudwatch": "^1.95.2",
+    "@aws-cdk/aws-ecs": "^1.95.2",
     "@aws-cdk/aws-events": "^1.95.2",
     "@aws-cdk/aws-events-targets": "^1.95.2",
+    "@aws-cdk/aws-iam": "^1.95.2",
+    "@aws-cdk/aws-lambda": "^1.95.2",
+    "@aws-cdk/aws-logs": "^1.95.2",
     "@aws-cdk/core": "^1.95.2"
   },
   "bundledDependencies": [],
