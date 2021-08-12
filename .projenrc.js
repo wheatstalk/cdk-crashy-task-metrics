@@ -20,25 +20,32 @@ const project = new AwsCdkConstructLibrary({
   cdkDependencies: [
     '@aws-cdk/core',
     '@aws-cdk/aws-events',
+    '@aws-cdk/aws-ecs',
     '@aws-cdk/aws-events-targets',
     '@aws-cdk/aws-cloudwatch',
+    '@aws-cdk/aws-lambda',
+    '@aws-cdk/aws-logs',
+    '@aws-cdk/aws-iam',
   ],
 
   devDeps: [
     'ts-node@^9',
     'aws-cdk@^1.95.2',
+    'aws-sdk@^2',
   ],
 
   gitignore: [
     'cdk.out',
     '.idea',
     '*.iml',
+    'cdk.context.json',
   ],
 
   npmignore: [
     'cdk.out',
     '.idea',
     '*.iml',
+    'cdk.context.json',
   ],
 
   // cdkDependencies: undefined,        /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
@@ -50,5 +57,5 @@ const project = new AwsCdkConstructLibrary({
   // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
   // release: undefined,                /* Add release management to this project. */
 });
-project.package.setScript('it:dev', 'cdk --app "ts-node -P tsconfig.eslint.json src/it/it-dev.ts"');
+project.package.setScript('it:lit', 'cdk --app "ts-node -P tsconfig.eslint.json src/it/it-lit.ts"');
 project.synth();

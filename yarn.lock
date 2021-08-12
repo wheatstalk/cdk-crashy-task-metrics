@@ -259,7 +259,7 @@
     "@aws-cdk/core" "1.118.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-ecs@1.118.0":
+"@aws-cdk/aws-ecs@1.118.0", "@aws-cdk/aws-ecs@^1.95.2":
   version "1.118.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-ecs/-/aws-ecs-1.118.0.tgz#aa0a231e79d966710f8541e6483a669c166f1811"
   integrity sha512-TN/dB9EDXrgvsR7QaW17VFGJ036UjJFueg2OHjWn1pRgHU1ul6jRe0tXfyQiLaTjxmWWInnsIN6t+Y2FTrw0WQ==
@@ -374,7 +374,7 @@
     "@aws-cdk/custom-resources" "1.118.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-iam@1.118.0":
+"@aws-cdk/aws-iam@1.118.0", "@aws-cdk/aws-iam@^1.95.2":
   version "1.118.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.118.0.tgz#ae2064bd4bcc97b498130238178a11be8fb9fd4e"
   integrity sha512-1AhnGWclYnZmuO/A5EY37atd/xYssC0EB/wzxQz/nwsSoKIKguTmNoK7ZWY/b2UJyqWFSSQII7DCVDT3P583jQ==
@@ -422,7 +422,7 @@
     "@aws-cdk/cx-api" "1.118.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-lambda@1.118.0":
+"@aws-cdk/aws-lambda@1.118.0", "@aws-cdk/aws-lambda@^1.95.2":
   version "1.118.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-lambda/-/aws-lambda-1.118.0.tgz#78b769a2c19ed31b4d01c09b40f4390b2c419396"
   integrity sha512-OfxFdRG3wVFSWfCktc0oHx7CnVOG+HUvA6QStrMWnlEBHE8aRR6zFSUK11CbuDe8/bLrJqs9N5QvOLWk7j2kRA==
@@ -447,7 +447,7 @@
     "@aws-cdk/region-info" "1.118.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-logs@1.118.0":
+"@aws-cdk/aws-logs@1.118.0", "@aws-cdk/aws-logs@^1.95.2":
   version "1.118.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-logs/-/aws-logs-1.118.0.tgz#1a922cb82a70f7249444feb5a6c94b7b35e2dfcc"
   integrity sha512-lkmL49Z+p0uv2dSJvOoOteW917G/rq3AdG8DSG9uNu5A4YJBRhNZLmdddtCkwt6agS6/06k+NKt07qrro3vLZw==
@@ -1907,7 +1907,7 @@ aws-cdk@^1.95.2:
     yaml "1.10.2"
     yargs "^16.2.0"
 
-aws-sdk@^2.848.0:
+aws-sdk@^2, aws-sdk@^2.848.0:
   version "2.966.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.966.0.tgz#2e929cee510666bab43936e8726774af4a3a20dc"
   integrity sha512-gxfur+ofp3WGRHecc1nlKKlrI5iiYET824/3YHjSlKsLhG1biz+hhMpz1xjA7M4cdzjuWdmGoy01CBqghet7Mg==
