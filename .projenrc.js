@@ -6,6 +6,15 @@ const project = new AwsCdkConstructLibrary({
   defaultReleaseBranch: 'main',
   name: '@wheatstalk/cdk-crashy-task-metrics',
   repositoryUrl: 'https://github.com/wheatstalk/cdk-crashy-task-metrics.git',
+  description: 'Create metrics and alarms for ECS tasks that stop for reasons other than scaling activities. (i.e., crashes.)',
+
+  keywords: [
+    'cdk',
+    'ecs',
+    'fargate',
+    'cloudwatch',
+    'alarms',
+  ],
 
   releaseEveryCommit: true,
   releaseToNpm: true,

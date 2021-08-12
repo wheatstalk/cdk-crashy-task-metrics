@@ -1,5 +1,6 @@
 {
   "name": "@wheatstalk/cdk-crashy-task-metrics",
+  "description": "Create metrics and alarms for ECS tasks that stop for reasons other than scaling activities. (i.e., crashes.)",
   "repository": {
     "type": "git",
     "url": "https://github.com/wheatstalk/cdk-crashy-task-metrics.git"
@@ -81,7 +82,11 @@
   },
   "bundledDependencies": [],
   "keywords": [
-    "cdk"
+    "alarms",
+    "cdk",
+    "cloudwatch",
+    "ecs",
+    "fargate"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
