@@ -26,6 +26,7 @@ const project = new AwsCdkConstructLibrary({
     allowedUsernames: ['github-actions', 'github-actions[bot]', 'misterjoshua'],
   },
 
+  cdkDependenciesAsDeps: false,
   cdkDependencies: [
     '@aws-cdk/core',
     '@aws-cdk/aws-events',
