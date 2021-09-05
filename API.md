@@ -6,7 +6,7 @@
 
 Provide metrics for crashy tasks run by an ECS Service.
 
-#### Initializer <a name="@wheatstalk/cdk-crashy-task-metrics.CrashyTaskMetrics.Initializer"></a>
+#### Initializers <a name="@wheatstalk/cdk-crashy-task-metrics.CrashyTaskMetrics.Initializer"></a>
 
 ```typescript
 import { CrashyTaskMetrics } from '@wheatstalk/cdk-crashy-task-metrics'
