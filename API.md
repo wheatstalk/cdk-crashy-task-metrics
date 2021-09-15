@@ -65,6 +65,10 @@ const crashyTaskMetricsProps: CrashyTaskMetricsProps = { ... }
 
 ##### `service`<sup>Required</sup> <a name="@wheatstalk/cdk-crashy-task-metrics.CrashyTaskMetricsProps.property.service"></a>
 
+```typescript
+public readonly service: FargateService | Ec2Service;
+```
+
 - *Type:* [`@aws-cdk/aws-ecs.FargateService`](#@aws-cdk/aws-ecs.FargateService) | [`@aws-cdk/aws-ecs.Ec2Service`](#@aws-cdk/aws-ecs.Ec2Service)
 
 ECS service to report metrics on.
@@ -72,6 +76,10 @@ ECS service to report metrics on.
 ---
 
 ##### `metricName`<sup>Optional</sup> <a name="@wheatstalk/cdk-crashy-task-metrics.CrashyTaskMetricsProps.property.metricName"></a>
+
+```typescript
+public readonly metricName: string;
+```
 
 - *Type:* `string`
 - *Default:* 'TaskCrashes'
@@ -81,6 +89,10 @@ Metric name.
 ---
 
 ##### `metricNamespace`<sup>Optional</sup> <a name="@wheatstalk/cdk-crashy-task-metrics.CrashyTaskMetricsProps.property.metricNamespace"></a>
+
+```typescript
+public readonly metricNamespace: string;
+```
 
 - *Type:* `string`
 - *Default:* 'cdk-crashy-task-metrics'
